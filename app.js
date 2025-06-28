@@ -1,0 +1,1 @@
+console.log("Hello Path2Tech Trainees have fun with DOM!");

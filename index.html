@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Tutorial</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+        <a href="#dom-manipulation">DOM Manipulation Examples</a>
+        <a href="#dom-add-remove">DOM Adding and Removing Elements Examples</a>
+        <a href="#event-listeners">DOM Event Listeners Examples</a>
+        <a href="#form-events">DOM Form Events Examples</a>
+        <a href="#dom-ajax">DOM AJAX Examples</a>
+    </nav>
+    <!-- DOM Manipulation Examples -->
+    <section id="dom-manipulation">
+      <h1 id="element">Select me using JavaScript</h1>
+      <p id="manipulate">Manipulate My Text</p>
+      <p id="manipulate-html">Manipulate my Inner HTML</p>
+      <img src="assets/cat.jpg" alt="Image" />
+      <p id="style">Manipulate my style</p>
+      <p id="add-class">Add a class to style me</p>
+      <p id="remove-class" class="ugly">Remove a class to fix my styling</p>
+      <section id="color-mode" class="basic">
+        <p>Use JavaScript to toggle my color mode</p>
+      </section>
+    </section>
+    <!-- DOM Creating and Deleting Examples -->
+    <section id="dom-add-remove">
+      <section id="add-item">
+        <h2>Add an element below me</h2>
+      </section>
+      <p id="remove-item">I am evil and need to be removed</p>
+    </section>
+
+    <!-- DOM Event Listeners Examples -->
+    <section id="event-listeners">
+      <button id="click">Click this button to do something cool</button>
+      <button id="dbl-click">
+        Double click this button to do something cool
+      </button>
+      <section id="mouse-event">
+        <h2>Add a mouse enter and mouse event to something cool</h2>
+      </section>
+      <section>
+        <p>The current key being pressed down is</p>
+        <p id="key-down"></p>
+      </section>
+      <section>
+        <p>The current key up</p>
+        <p id="key-up"></p>
+      </section>
+      <section>
+        <p>The current key being pressed is</p>
+        <p id="key-press"></p>
+      </section>
+    </section>
+    <!-- DOM Form Event Examples -->
+    <section id="form-events">
+      <form id="feedback-form">
+        <h2>Leave some feedback</h2>
+        <p>Feedback</p>
+        <label for="feedback">
+          <input
+            type="text"
+            name="feedback"
+            id="feedback"
+            placeholder="Ex: This Product is great!"
+          />
+        </label>
+        <br />
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <section id="feedback-section">
+        <h2>All User feedback</h2>
+      </section>
+    </section>
+    <!-- DOM AJAX Examples -->
+    <section id="dom-ajax">
+      <button id="fetch-todos">
+        Press to get all todos from JSON Placeholder API
+      </button>
+      <section id="todos-section"></section>
+    </section>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
